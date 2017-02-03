@@ -7,12 +7,17 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Shreyansh Khajanchi on 03-02-2017.
  */
-
+/*
 class AsimoDbHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
-    public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "profilesdb.db";
+    int DATABASE_VERSION = 1;
+    String DATABASE_NAME = "profilesdb.db";
 
+    public AsimoDbHelper(Context context, String name, int version) {
+        DATABASE_NAME = name;
+        DATABASE_VERSION = version;
+        AsimoDbHelper(context);
+    }
     public AsimoDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -28,4 +33,4 @@ class AsimoDbHelper extends SQLiteOpenHelper {
     public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         onUpgrade(db, oldVersion, newVersion);
     }
-}
+} */

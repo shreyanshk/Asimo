@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="crop_profile">
+        <item>Wheat</item>
+        <item>Rice</item>
+        <item>Maize</item>
+        <item>Soybean</item>
+        <item>Sweet Potato</item>
+        <item>Baby Corn</item>
+        <item>Okra</item>
+    </array>
+</resources>

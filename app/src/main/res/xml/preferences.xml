@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Profiles">
+    <ListPreference
+        android:title="Active Profile"
+        android:key="active_profile"
+        android:entries="@array/crop_profile"
+        android:entryValues="@array/crop_profile"
+        android:summary="%s"
+        android:defaultValue="Wheat">
+    </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Details">
+
+    </PreferenceCategory>
+</PreferenceScreen>
