@@ -92,6 +92,16 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="48dip"/>
+            <ImageView
+                android:id="@+id/vitlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vitlogo2"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dip"/>
         </GridLayout>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

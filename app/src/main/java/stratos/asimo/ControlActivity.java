@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.net.Uri;
+
 /**
  * Created by Shreyansh Khajanchi on 03-02-2017.
  */
@@ -43,10 +45,13 @@ public class ControlActivity extends AppCompatActivity {
         }
 
         if (id == R.id.action_about) {
-            Toast.makeText(this, "Please visit http://placeholder", Toast.LENGTH_SHORT).show();
+            String url = "http://asimo.azurewebsites.net";
+            Intent redir_url = new Intent(Intent.ACTION_VIEW);
+            redir_url.setData(Uri.parse(url));
+            startActivity(redir_url);
+//            Toast.makeText(this, "Please visit http://asimo.azurewebsites.net", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 }
-

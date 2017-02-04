@@ -13,6 +13,28 @@
     </PreferenceCategory>
     <PreferenceCategory
         android:title="Details">
-
+        <CheckBoxPreference
+            android:title="Check Humidity"
+            android:key="humidity_toggle"
+            android:defaultValue="True" />
+        <EditTextPreference
+            android:title="Vehicle Speed"
+            android:key="manuverspeed"
+            android:defaultValue="10"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:title="Drip Speed"
+            android:key="dripspeed"
+            android:defaultValue="15"
+            android:inputType="numberDecimal"/>
+        <CheckBoxPreference
+            android:title="Warn on critical battery level"
+            android:key="battery_toggle"
+            android:defaultValue="True"/>
+        <EditTextPreference
+            android:title="Critical Battery Level"
+            android:key="critical_batt_level"
+            android:defaultValue="20"
+            android:inputType="number"/>
     </PreferenceCategory>
 </PreferenceScreen>
