@@ -91,20 +91,27 @@
             </LinearLayout>
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="48dip"/>
+                android:layout_height="24dip"/>
             <TextView
                 android:id="@+id/water_level"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
                 android:text="Current Water Level: "/>
             <ProgressBar
                 android:id="@+id/waterlevel"
                 android:indeterminate="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="50"
+                android:progress="67"
                 />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dip"/>
             <ImageView
                 android:id="@+id/vitlogo"
                 android:layout_width="match_parent"
