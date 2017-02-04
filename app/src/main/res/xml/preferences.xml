@@ -36,5 +36,14 @@
             android:key="critical_batt_level"
             android:defaultValue="20"
             android:inputType="number"/>
+        <CheckBoxPreference
+            android:title="Warn on critical Water level"
+            android:key="tank_toggle"
+            android:defaultValue="True"/>
+        <EditTextPreference
+            android:title="Critical Water Level"
+            android:key="critical_h20_level"
+            android:defaultValue="2"
+            android:inputType="number"/>
     </PreferenceCategory>
 </PreferenceScreen>

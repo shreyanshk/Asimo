@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:columnCount="3"
             android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="604dp">
             <Button
                 android:layout_width="match_parent"
                 android:text="Start Asimo"/>
@@ -92,6 +92,19 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="48dip"/>
+            <TextView
+                android:id="@+id/water_level"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Current Water Level: "/>
+            <ProgressBar
+                android:id="@+id/waterlevel"
+                android:indeterminate="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="50"
+                />
             <ImageView
                 android:id="@+id/vitlogo"
                 android:layout_width="match_parent"
@@ -99,9 +112,6 @@
                 android:src="@drawable/vitlogo2"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"/>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="48dip"/>
         </GridLayout>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
